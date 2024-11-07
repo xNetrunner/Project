@@ -11,6 +11,6 @@ print(type(l123)) # <class 'bool'>
 
 # input('комментарий')
 # int ('строка')
-name2 = int(input('Введите что-нибудь: ')) # 25
+name2 = int(input('Введите что-нибудь: '))
 print("То, что вы ввели",name2)
 print("Тип данных:",type(name2))
