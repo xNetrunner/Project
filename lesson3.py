@@ -1,33 +1,46 @@
+# bool - True и False
 
-result = 5 + 10 # сложение
-result2 = 10 -5 # вычитание
-result3 = 5 * 5 # умножение
-result4 = 5 / 2 # деление вернет float
-print(result4, type(result4))
-result5 = 5 // 2 # деление вернет int - целое число
-print(result5, type(result5))
-result6 = 5 % 2 # деление вернет int - остаток
-print(result6, type(result6))
-result7 = 5 **3 # возведение в степень
-print(result7, type(result7))
+# == - проверка на равенство переменных
+# != - проверка на неравенсто переменных
 
-num1 = -142
-print(abs(num1))
-#abs_num = abs(num1)
-#print(abs_num)
+num1 = int(input('Введите число: ')) # 12
 
-num1 = "Hello"
-print(num1)
-num1 = False
-print(num1)
+# and - И (*) or - ИЛИ (+)
+usl1 = num1 > 10 and num1 % 2 == 0 and num1 < 20 # ...and... True and True and True -> 1 * 1 * 1 = 1 -> True
+usl2 = num1 < 10 and num1 % 2 == 0 # ...and... True and False -> 1 * 0 = 0 -> False
+print(usl1)
+print(usl2)
 
-# str - str() float - float() int - int()
-num2 = 25
-num2 = str(num2) # '25'
-num3 =float(num2)
-print(num2, type(num2))
-print(num3, type(num3))
+num1 = int(input('Введите число: ')) # 50, 66
+usl3 = num1 % 3 == 0 or num1 > 100 # False + False -> 0 + 0 = 0 -> False
+usl4 = num1 % 3 == 0 or num1 > 100 # True + False -> 1 + 0 = 1 -> True
+usl5 = num1 % 3 == 0 or num1 > 100 or num1 < 1000 and num1 % 2 == 0
+print(usl3)
+print(usl4)
+print(usl5)
 
-num4 = int(input('Ведите число 1: '))
-num5 = int(input('Ведите число 2: '))
-print(num4 + num5, "Сложили числа")
+# if условие == True
+#    действие 
+# elif условие == True
+#    действие
+# else: действие
+
+num1 = int(input('Введите число: '))
+
+usl1 = num1 > 10 and num1 % 2 ==0
+if usl1: # правда / usl1 == False - не правда
+    print('Число больше 10 и четное')
+elif num1 % 2 != 0:
+    print('Число нечетное')
+elif num1 == 8:
+    print('Вы ввели 8')
+else:
+    print('Пока')
+
+print('Конец')
+
+usl1 = True
+print(not(usl1)) # False
+print(not(not(usl1))) # True
+
+# num1, num2 [+,-,*,/,**]
