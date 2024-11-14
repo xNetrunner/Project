@@ -8,7 +8,7 @@ result5 = 5 // 2 # деление вернет int - целое число
 print(result5, type(result5))
 result6 = 5 % 2 # деление вернет int - остаток
 print(result6, type(result6))
-result7 = 5 **3 # возведение в степень
+result7 = 5 ** 3 # возведение в степень
 print(result7, type(result7))
 
 num1 = -142
@@ -24,7 +24,7 @@ print(num1)
 # str - str() float - float() int - int()
 num2 = 25
 num2 = str(num2) # '25'
-num3 =float(num2)
+num3 = float(num2)
 print(num2, type(num2))
 print(num3, type(num3))
 
